@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+} /* Tira todas as configurações, para não intervir no código */
+
+@font-face {
+    font-family: 'Work Sans'; /* Fonte que você atribuirá ao site */
+    src: url('./Work_Sans/WorkSans-Italic-VariableFont_wght.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+
+body{
+    background-color: #f3e9dd; /* Cor de fundo do site */
+    font-family: 'Work Sans', sans-serif; /* Aplica a fonte personalizada no corpo da página */
+} /* Aqui definimos a cor e a fonte padrão da página inteira do corpo do código */
+
+.bg-header{
+    background-color: #946b4a; /* Cor de fundo marrom para o cabeçalho */
+    display: flex; /* Usando flexbox para posicionar itens no cabeçalho */
+    justify-content: center; /* Alinha os itens no centro */
+} /* Aqui definimos a cor de fundo, permitimos o alinhamento e define o alinhamento central e horizontal dos itens */
+
+.nav {
+    display: flex; /* Define os itens de navegação como flexíveis */
+    gap: 16px; /* Espaçamento entre os itens de navegação */
+    justify-content: center; /* Centraliza os itens na linha */
+    position: absolute; /* Permite que você posicione a navegação de forma absoluta */
+    left: 50%; /* Move a navegação para o meio da página */
+    transform: translateX(-50%); /* Ajusta a posição para garantir que esteja centralizado */
+} /* O item que utilizar essa classe irá receber todas essa propriedades */
+
+.nav > a, span {
+    font-size: 14px; /* Tamanho da fonte dos links */
+    color: #f3e9dd; /* Cor do texto dos links */
+    font-weight: 700; /* Fonte em negrito */
+}/* Define o tamanho da fonte e a cor das tags a e span */
+
+.nav > a:hover{
+    color: #5e5653; /* Cor dos links quando o mouse passar por cima */
+}/* quando passar o mouse em cima do escrito mudará pra essa cor */
+
+.navzap {
+    display: flex; /* Usando flexbox para a navegação dos botões de WhatsApp */
+    gap: 16px; /* Espaçamento entre os itens */
+    position: absolute; /* Posicionamento absoluto */
+    top: 30px; /* Distância do topo */
+    right: 30px; /* Distância da borda direita */
+} /* O item que utilizar essa classe irá receber todas essas propriedades */
+
+.navzap > a {
+    font-size: 14px; /* Tamanho da fonte dos links */
+    color: #f3e9dd; /* Cor dos links */
+    font-weight: 700; /* Peso da fonte em negrito */
+}/* Define o tamanho da fonte e a cor das tags a e span */
+
+.nav > a:hover{
+    color: #5e5653; /* Cor dos links ao passar o mouse */
+}/* quando passar o mouse em cima do escrito mudará pra essa cor */
+
+
+.container {
+    gap: 20px; /* Espaçamento entre os itens dentro do container */
+    padding: 20px; /* Padding dentro do container */
+    width: 1170px; /* Largura fixa do container */
+    display: flex; /* Usando flexbox para posicionamento dos itens */
+    justify-content: space-between; /* Espaço igual entre os itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    flex-wrap: wrap; /*Permite que os itens quebrem para a próxima linha, se necessário */
+}/*define um container principal com espaçamento entre os itens, com um layout flexível e largura fixa de 1170px.*/
+
+.logo {
+    width: 128px; /* Largura da logo */
+    height: 35px; /* Altura da logo */
+}/*define a altura e largura da logo*/
+
+/* Footer  */
+.footer{
+    display: flex; /* Usando flexbox para a footer */
+    justify-content: space-between; /* Espaçamento entre os itens da footer*/
+    flex-wrap: wrap; /* Permite a quebra de linha na footer */
+    gap: 40px; /* Espaçamento entre os itens */
+}
+
+
+/* Div que contem a cor do footer  */
+.bg-footer{
+    background-color: #946b4a; /* Cor de fundo da footer*/
+    color: #fff; /* Cor do texto na footer */
+    font-weight: 300; /* Fonte mais leve */
+    font-size: 12px; /* Tamanho da fonte na footer */
+}
+
+.linkcolor {
+    color: #ffffff; /* Cor dos links na footer */
+}
+
+/* Margem para as listas do footer  */
+.nav-footer li{
+    margin-bottom: 10px; /* Espaçamento inferior para cada item da lista */
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons img {
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
+    transition: transform 0.2s ease; /* Animação ao passar o mouse */
+    margin-top: 5px; /* Move os ícones ligeiramente para baixo */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Aumenta um pouco ao passar o mouse */
+}
+
+.logo2 {
+    width: 200px; /* Largura da segunda logo */
+}
+
+input:focus{
+    outline: 2px solid #EABE63; /* Altera a cor do contorno do campo quando ele está em foco */
+}
+
+.main{
+    height: 100vh; /* Define a altura como 100% da altura da tela */
+    background-color: #f3e9dd; /* Cor de fundo da área principal */
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+}/*muda a cor de trás do escrito */
+
+.btn-absolute{
+    position: fixed; /* Posicionamento fixo para o botão */
+    bottom: 20px; /* Distância da parte inferior da página */
+    right: 20px /* Distância da parte direita da página */
+}
+
+.btn-absolute a i{
+    font-size: 32px; /* Tamanho do ícone dentro do botão */
+    color: #fff; /* Cor do ícone */
+    background-color: rgba(0, 0, 0, 0.968); /* Cor de fundo do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.section-0{
+    width: 1170px; /* Largura fixa para a seção */
+    flex-wrap: wrap; /* Permite a quebra de linha dos itens */
+    align-items: center; /* Alinha verticalmente no centro */
+    text-align: center; /* Alinha o texto no centro */
+    justify-content: center; /* Centraliza os itens */
+    color: #f3e9dd; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */ 
+    min-height: 50px; /* Altura mínima da seção */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Padding da seção */
+}
+
+/* Definindo o cor de fundo da sessão-0 */
+.section0-bg{
+    background-color: #946b4a;
+}
+
+.left p{
+    margin: 20px 0; /* Margem acima e abaixo do parágrafo */
+    font-size: 14px; /* Tamanho da fonte do parágrafo */
+}
+
+/* Definindo uma largura maxima e quebra de wrap com flex Basis e Flex Shrink  */
+.left{
+    max-width: 440px; /* Largura máxima da coluna esquerda */
+    flex: 1 1 400px; /* Flexível, com largura base de 400px */
+}
+
+.nav2 {
+    font-size: 14px; /* Tamanho da fonte na navegação */
+}
+
+.nav2 > a {
+    font-size: 18px; /* Tamanho da fonte dos links */
+    font-weight: 100px; /* Peso da fonte */
+    color: #946b4a; /* Cor do texto */
+}
+
+.nav2 > a:hover{
+    color: #694d41; /* Cor do link ao passar o mouse */
+}
+
+.imgloja {
+    width:220px; /* Largura da imagem da loja */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+
+/* Definindo uma largura máxima para as imagens  */
+.right > img{
+    max-width: 400px; /* Largura máxima das imagens à direita */
+}
+
+
+.section-1 .left{
+    order: 2; /* Inverte a ordem da coluna esquerda na seção-1 */
+}
+
+.main, .section-1, .section-2 {
+    display: flex; /* Usando flexbox para o layout, o que facilita o alinhamento dos elementos */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se não houver espaço suficiente */
+    gap: 60px; /* Define o espaçamento entre os itens (distância de 60px) */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+
+.location-icons{
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
+}
+
+/* Carrossel */
+
+/* Estilização geral */
+.carousel {
+    position: relative; /* Define o posicionamento relativo do carousel */
+    width: 100%; /* Define a largura do carrossel como 100% */
+}
+
+  
+.slides {
+    display: flex; /* Usa o modelo Flexbox para a disposição dos itens */
+    transition: transform 0.5s ease-in-out; /* Define uma transição suave para as mudanças de slide */
+    width: 300%; /* Largura total de 300%, o que é três vezes maior que a largura do contêiner */
+}
+
+  
+.carousel-item {
+    width: 100%; /* Cada item do carousel ocupará 100% da largura do contêiner */
+    flex: 1 0 auto; /* Define o comportamento flexível dos itens dentro do carousel */
+}
+
+  
+.carousel-item img {
+    width: 100px; /* Define a largura da imagem como 100 pixels */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção da imagem */
+}
+
+  
+  /* Esconde os inputs */
+input[type="radio"] {
+    display: none;
+}
+  
+  /* Navegação (botões inferiores) */
+  .navigation {
+    position: absolute; /* Posiciona o contêiner de navegação de forma absoluta em relação ao contêiner pai */
+    bottom: 20px; /* Posiciona a navegação a 20 pixels da parte inferior do contêiner */
+    left: 50%; /* Posiciona a navegação no meio horizontal do contêiner pai */
+    transform: translateX(-50%); /* Ajusta a navegação para garantir que esteja centralizada */
+    display: flex; /* Usa o Flexbox para o layout interno */
+    justify-content: center; /* Centraliza os itens de navegação horizontalmente */
+    gap: 10px; /* Define o espaçamento de 10px entre os itens de navegação */
+}
+
+.nav-btn {
+    width: 15px; /* Define a largura do botão de navegação como 15 pixels */
+    height: 15px; /* Define a altura do botão de navegação como 15 pixels */
+    border-radius: 50%; /* Torna o botão redondo */
+    background: #ddd; /* Define a cor de fundo do botão como um cinza claro (#ddd) */
+    cursor: pointer; /* Muda o cursor para uma mãozinha (indicando que o item é clicável) */
+}
+
+  /* Quando o primeiro slide (input#slide1) é selecionado */
+input#slide1:checked ~ .slides {
+    transform: translateX(0%); /* Move os slides para a posição inicial (0%) */
+}
+
+/* Quando o segundo slide (input#slide2) é selecionado */
+input#slide2:checked ~ .slides {
+    transform: translateX(-100%); /* Move os slides para a esquerda, mostrando o segundo slide (100% da largura do slide) */
+}
+
+/* Quando o terceiro slide (input#slide3) é selecionado */
+input#slide3:checked ~ .slides {
+    transform: translateX(-200%); /* Move os slides para a esquerda, mostrando o terceiro slide (200% da largura do slide) */
+}
+
+/* Quando qualquer um dos inputs (slide1, slide2 ou slide3) é selecionado, o fundo do respectivo botão de navegação é alterado */
+input#slide1:checked ~ .navigation label[for="slide1"],
+input#slide2:checked ~ .navigation label[for="slide2"],
+input#slide3:checked ~ .navigation label[for="slide3"] {
+    background: #b29b88; /* Define a cor de fundo como #b29b88 para o botão de navegação correspondente */
+}
+
+
+/* Carrossel */

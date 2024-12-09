@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+} /* Tira todas as configurações iniciais da página, para não intervir no código */
+
+@font-face {
+    font-family: 'Work Sans'; /* Nome que colocamos na fonte */
+    src: url('./Work_Sans/WorkSans-Italic-VariableFont_wght.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+} /* Aqui estamos incluindo a fonte personalizada do arquivo */
+
+body{
+    background-color: #f3e9dd;
+    font-family: 'Work Sans', sans-serif;
+} /* Aqui definimos a cor e a fonte padrão da página inteira do corpo do código */
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bg-header{
+    background-color: #946b4a;
+    display: flex;
+    justify-content: center;
+} /* Aqui definimos a cor de fundo e definimos o alinhamento central horizontal dos itens */
+
+.nav {
+    display: flex;
+    gap: 16px; /* Define o espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens */
+    position: absolute; /* Permite que você posicione a navegação de forma absoluta */
+    left: 50%; /* Move o ponto inicial da navegação para o meio da página */
+    transform: translateX(-50%); /* Ajusta a posição para garantir que esteja perfeitamente centralizado */
+} /* O item que utilizar essa classe irá receber todas essa propriedades */
+
+.nav > a, span {
+    font-size: 14px;
+    color: #f3e9dd;
+    font-weight: 700;
+}/* Define o tamanho da fonte e a cor das tags a e span da classe nav */
+
+.nav > a:hover{
+    color: #5e5653;
+}/* Aqui permitimos que quando alguém passar o mouse em cima do escrito mudará pra essa cor */
+
+.navzap { /* "Botão" do canto superior direito */
+    display: flex;
+    gap: 16px; /* Define o espaçamento entre os itens */
+    position: absolute; /* Permite que você posicione a navegação de forma absoluta */
+    top: 30px; /* Distância do topo da página */
+    right: 30px; /* Distância da borda direita da página*/
+} /* O item que utilizar essa classe irá receber todas essas propriedades */
+
+.navzap > a {
+    font-size: 14px;
+    color: #f3e9dd;
+    font-weight: 700;
+}/* Define o tamanho da fonte e a cor das tags "a" e "span" para a classe acima */
+
+.navzap > a:hover{
+    color: #5e5653;
+}/* Aqui permitimos que quando alguém passar o mouse em cima do escrito mudará pra essa cor */
+
+.container {
+    gap: 20px;
+    padding: 20px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} /* Define um conteiner para a header com espaço de 20 pixel entre os elementos e a sua largura fixa de 1170 pixels */
+
+.logo {
+    width: 128px; /* Largura */
+    height: 35px; /* Altura */
+}/* Aqui definimos a largura e altura da logo da header */
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.carousel {
+    position: relative;
+    width: 100%;
+} /* Aqui definimos o tamanho que o carrossel irá ocupar na página */
+  
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* 3 slides */
+} /* Aqui definimos a quantidade de slides e a transição entre eles */
+  
+.carousel-item {
+    width: 100%;
+    flex: 1 0 auto;
+} /* Aqui colocamos cada carrossel para ocupar o tamanho máximo e se comportar como um item flexível */
+  
+.carousel-item img {
+    width: 100px;
+    height: auto;
+} /* Aqui definimos a largura fixa e a altura automática */
+
+input[type="radio"] {
+    display: none;
+} /* Aqui transformamos os slides transferíveis a partir do toque nos botões */
+  
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%; /* Posiciona no meio horizontal */
+    justify-content: center; /* Ajusta para centralizar */
+    display: flex;
+    gap: 10px;
+} /* Aqui fazemos a configuração do botão como alinhamento, espaçamento e posição */
+  
+.nav-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+} /* Aqui fazemos a configuração do botão como a cor, o tamanho, a largura e a borda */
+
+input#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+  
+input#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+  
+input#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+} /* Esses 3 fazem com que os slides se movam da esquerda pra direita, do primeiro até o último */
+  
+  input#slide1:checked ~ .navigation label[for="slide1"],
+  input#slide2:checked ~ .navigation label[for="slide2"],
+  input#slide3:checked ~ .navigation label[for="slide3"] {
+    background: #b29b88;
+} /* Aqui deixa o botão com uma cor diferente quando selecionado */
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.section-0{
+    width: 1170px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #f3e9dd;
+    font-size: 12px;
+    min-height: 50px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Definindo o cor de fundo da sessão-0 */
+.section0-bg{
+    background-color: #946b4a;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.left p {
+    margin: 20px 0; /* Adiciona uma margem de 20px acima e abaixo de cada parágrafo dentro da classe .left */
+    font-size: 18px; /* Define o tamanho da fonte dos parágrafos para 18px */
+}
+
+/* Definindo uma largura maxima e quebra de wrap com flex Basis e Flex Shrink  */
+.left {
+    max-width: 440px; /* Define a largura máxima do elemento .left como 440px*/
+    flex: 1 1 400px; /* Define as propriedades de flexbox para o item - 1 permite que o item cresça, 1 - permite que ele encolha e define a largura inicial do item como 400px */
+}
+
+.imgloja {
+    width:260px; /* Define a largura de 260px */
+    border-radius: 10px; /* Aplica bordas arredondadas de 10px */
+}
+
+/* Definindo uma largura máxima para as imagens  */
+.right > img {
+    max-width: 400px; /* Define a largura máxima da imagem como 400px */
+}
+
+/* Aqui eu mudo a ordem dos elementos na sessão-1 que é uma replica da home porém com os lados alterados */
+.section-1 .left{
+    order: 2; /* Define a ordem de exibição do elemento com a classe .left dentro do contêiner da seção-1, colocando-o após outros elementos */
+}
+
+.main, .section-1, .section-2 {
+    display: flex; /* Aplica o Flexbox para organizar os elementos dentro desses contêineres */
+    align-items: center; /* Alinha os itens verticalmente ao centro do contêiner */
+    flex-wrap: wrap; /* Permite que os itens se ajustem e quebrem para a próxima linha */
+    gap: 60px; /* Define o espaçamento entre os itens dentro do contêiner como 60px */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do contêiner */
+}
+
+.location-icons{
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Div que contem a cor do footer  */
+.bg-footer{
+    background-color: #946b4a;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.linkcolor {
+    color: #ffffff;
+}
+
+/* Margem para as listas do footer  */
+.nav-footer li{
+    margin-bottom: 10px;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons img {
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
+    transition: transform 0.2s ease; /* Animação ao passar o mouse */
+    margin-top: 5px; /* Move os ícones ligeiramente para baixo */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Aumenta um pouco ao passar o mouse */
+}
+
+.logo2 {
+    width: 200px;
+}
+
+
+
+
+
+.main{
+    height: 100vh; /* Define a altura como 100% da altura da tela */
+    background-color: #f3e9dd; /* Cor de fundo da área principal */
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+}/*muda a cor de trás do escrito */
+
+.btn-absolute{
+    position: fixed; /* Posicionamento fixo para o botão */
+    bottom: 20px; /* Distância da parte inferior da página */
+    right: 20px /* Distância da parte direita da página */
+}
+
+.btn-absolute a i{
+    font-size: 32px; /* Tamanho do ícone dentro do botão */
+    color: #fff; /* Cor do ícone */
+    background-color: rgba(0, 0, 0, 0.968); /* Cor de fundo do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+}
