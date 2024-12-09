@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres e a visualização para dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilo da página -->
+    <link rel="stylesheet" href="./Styles/dellicatta_lojas.css">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Delicatta</title>
+    <!-- Ícone do site, mostrado na aba do navegador -->
+    <link rel="shortcut icon" type="imagex/png" href="./img/Delicatta D.jpg">
+    <!-- Links para os estilos do Owl Carousel -->
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+</head>
+ 
+<body>
+    <!-- Cabeçalho da página com o logo e a navegação -->
+    <header class="bg-header" id="topo">
+        <div class="container">
+            <!-- Logo da Delicatta -->
+            <img class="logo" src="./img/Delicatta nome.jpg" alt="Logo escrita delicatta">
+            <!-- Navegação principal com links para outras páginas do site -->
+            <div class="nav">
+                <a href="./index.html">Home</a>
+                <span>|</span>
+                <a href="Menu Delicatta.pdf" target="_blank">Cardápio</a>
+                <span>|</span>
+                <a href="./Lojas_page.html">Lojas</a>
+                <span>|</span>
+                <a href="./contatopage.html">Contato</a>
+            </div>
+            <!-- Link para o WhatsApp para fazer pedidos -->
+            <div class="navzap">
+                <a href="https://w.app/DelicattaPadariaArtesanal" target="_blank">Peça no WhatsApp</a>
+            </div>
+        </div>
+    </header>
+    <!-- Seção do carousel de imagens -->
+    <section class="owl-carousel">
+        <div class="carousel">
+            <!-- Inputs para controlar os slides do carrossel -->
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+            <!-- Contêiner das imagens do carousel -->
+            <div class="slides">
+                <div class="carousel-item">
+                    <img src="./img/img1.png" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img2.png" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img3.png" alt="Imagem 3">
+                </div>
+            </div>
+            <!-- Botões de navegação para os slides -->
+            <div class="navigation">
+                <label for="slide1" class="nav-btn"></label>
+                <label for="slide2" class="nav-btn"></label>
+                <label for="slide3" class="nav-btn"></label>
+            </div>
+        </div>
+    </section>
+    <!-- Seção sobre as lojas -->
+    <section class="section0-bg"> 
+        <div class="container section-0">
+            <h1>Nossas lojas</h1>
+        </div>
+    </section>
+    <main>
+        <!-- Primeira loja: Avenida Paulista -->
+        <section class="container section-1">
+            <div class="left">
+                <!-- Link para o Google Maps com a localização da loja -->
+                <h1 class="nav2">
+                    <a href="https://maps.app.goo.gl/6XXoUxdCeHKQPJ2u5" target="_blank">
+                        <img class="location-icons" src="./img/pin local.png" alt="Pin de localização">
+                        Avenida Paulista - SP
+                    </a>
+                </h1>
+                <p>No coração de São Paulo, nossa padaria oferece o clima único da Avenida Paulista, um dos maiores símbolos da cidade, com um ambiente acolhedor para os paulistanos e turistas.</p>
+            </div>
+            <div class="right">
+                <!-- Imagem da loja localizada na Avenida Paulista -->
+                <img class="imgloja" src="./img/loja1.jpeg" alt="imagem da nossa loja">
+            </div>
+        </section>
+        <!-- Segunda loja: Vila Madalena -->
+        <section class="container section-2">
+            <div class="left">
+                <!-- Link para o Google Maps com a localização da loja -->
+                <h1 class="nav2">
+                    <a href="https://maps.app.goo.gl/eaYTBZS461XUJuBHA" target="_blank">
+                        <img class="location-icons" src="./img/pin local.png" alt="Pin de localização">
+                        Vila Madalena - SP
+                    </a>
+                </h1>
+                <p>No bairro mais descolado e artístico de São Paulo, nossa unidade oferece um espaço perfeito para quem quer realizar e saborear nossos pães e doces artesanais.</p>
+            </div>
+            <div class="right">
+                <!-- Imagem da loja localizada na Vila Madalena -->
+                <img class="imgloja" src="./img/loja2.jpeg" alt="imagem da nossa loja">
+            </div>
+        </section>
+        <!-- Terceira loja: Centro Histórico -->
+        <section class="container section-1">
+            <div class="left">
+                <!-- Link para o Google Maps com a localização da loja -->
+                <h1 class="nav2">
+                    <a href="https://maps.app.goo.gl/Kizxw2UwThmmKpDr7" target="_blank">
+                        <img class="location-icons" src="./img/pin local.png" alt="Pin de localização">
+                        Centro Histórico - SP
+                    </a>
+                </h1>
+                <p>No tradicional e movimentado Centro Histórico de São Paulo, nossa padaria oferece o melhor da panificação no centro pulsante da cidade, onde história e modernidade se encontram.</p>
+            </div>
+            <div class="right">
+                <!-- Imagem da loja localizada no Centro Histórico -->
+                <img class="imgloja" src="./img/loja3.jpeg" alt="imagem da nossa loja">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer da página com informações legais e links para redes sociais -->
+    <div class="bg-footer">
+        <footer class="container footer">
+            <!-- Logo da Delicatta no footer -->
+            <div>
+                <img class="logo2" src="./img/Delicatta logo.jpg" alt="Logo oficial">
+            </div>
+            <ul class="nav-footer">
+                <li><a class="linkcolor" href="./index.html">Sobre a marca</a></li>
+                <li><a class="linkcolor" href="./index.html">Sobre a empresa</a></li>
+                <li>Sobre os Desenvolvedores</li>
+            </ul>
+            <div>
+                <ul class="nav-footer">
+                    <li>Todos os Direitos Reservados &copy;</li>
+                    <li>Política de Privacidade</li>
+                    <li>CNPJ - 12.345.678/0001-90</li>
+                </ul>
+                <!-- Ícones na footer que levar para os respectivos sites -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_.delicattaa?igsh=c25zMmEwOHJ3MnBk" target="_blank">
+                        <img src="./img/insta icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://is.gd/emaildelicatta" target="_blank">
+                        <img src="./img/email icone.png" alt="Email">
+                    </a>
+                    <a href="https://w.app/DelicattaPadariaArtesanal" target="_blank">
+                        <img src="./img/whatsapp icon.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Botão de voltar ao topo da página -->
+    <div class="btn-absolute">
+        <a href="#topo">
+            <img src="./img/Voltar.png" alt="Seta para cima">
+        </a>
+    </div>
+    <!-- Scripts para carregar o jQuery e o OwlCarousel -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js">    </script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        })
+    </script>
+</body>
+</html>
